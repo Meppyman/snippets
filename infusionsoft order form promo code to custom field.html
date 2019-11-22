@@ -1,0 +1,15 @@
+<script>
+    jQuery(document).bind('click ', function() {
+    jQuery('.codeButton').click(function() {
+    updatepromo();
+    });
+    function updatepromo()
+    {
+     var text = jQuery('.promoField').val();
+      if (text) {
+      jQuery('#Contact0_LastPromoCode').val(text);
+      }
+    }  
+    updatepromo();
+});
+</script>
