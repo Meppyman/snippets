@@ -1,0 +1,11 @@
+<!-- Thank You Page HTML Snippet 1 -->
+<script type="text/javascript">
+	var purchaserEmail = '~Contact.Email~';
+	var purchaserName = encodeURI('~Contact.FirstName~' + ' ' + '~Contact.LastName~');
+	var purchaserId = '~Contact.Id~';
+	url = 'https://xxxxx.infusionsoft.com/app/page/recipient-entry-form/?inf_custom_PurchaserId=' + purchaserId + String.fromCharCode(38) + 'inf_custom_PurchaserEmail=' + purchaserEmail + String.fromCharCode(38) + 'inf_custom_Purchaser=' + purchaserName;
+	var delay = 1000;
+	setTimeout(function() 
+		{window.location.href = url;
+	}, delay);
+</script>
